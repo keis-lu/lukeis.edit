@@ -10,7 +10,7 @@
 #' @param mapping A data.frame specifying the street names and number whose
 #'   BFSNR needs to be updated. `NULL` by default.
 #'
-#' @return A list with two elements: success and failed.
+#' @return The database connection, invisibly.
 #'
 #' @details This function updates the municipality code (BFSNR) for a predefined
 #'   set of addresses in the photovoltaic installations table. It executes each

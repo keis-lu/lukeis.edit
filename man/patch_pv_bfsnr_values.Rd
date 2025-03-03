@@ -17,7 +17,7 @@ BFSNR needs to be updated. \code{NULL} by default.}
 \item{name}{A string specifying the table name to update.}
 }
 \value{
-A list with two elements: success and failed.
+The database connection, invisibly.
 }
 \description{
 Updates the BFSNR (municipality code) values for specific
