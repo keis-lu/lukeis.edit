@@ -72,7 +72,7 @@ patch_pv_bfsnr_values <- function(con, bfsnr_to, mapping = NULL) {
 
     DBI::dbBegin(con)
 
-    rows <- try(DBI::dbExecute(con, query), silent = TRUE)
+    rows <- try(DBI::dbExecute(con, query, immediate = TRUE), silent = TRUE)
 
     if (inherits(rows, "try-error")) {
       DBI::dbRollback(con)
