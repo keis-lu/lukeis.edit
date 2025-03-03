@@ -20,6 +20,7 @@
 #'   The function handles the special case of Thorenbergstrasse which has no
 #'   street number by looking for rows where the street number is either NULL or
 #'   empty.
+#' @export
 patch_pv_bfsnr_values <- function(con, bfsnr_to, mapping = NULL) {
   stopifnot(
     DBI::dbIsValid(con),
