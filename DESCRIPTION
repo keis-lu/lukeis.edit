@@ -1,0 +1,16 @@
+Package: lukeis.edit
+Title: Database Patching Utilities for LU projects
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "andrea@cynkra.com", role = c("aut", "cre"),)
+Description: Database Patching Utilities for LU projects. Database Patching Utilities for LU projects.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    DBI,
+    dplyr,
+    purrr,
+    rlang,
+    tibble
