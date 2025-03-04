@@ -29,7 +29,7 @@ patch_pv_bfsnr_values <- function(con, bfsnr_to, mapping = NULL) {
     DBI::dbExistsTable(con, "strom_produktionsanlagen"),
     is.null(mapping) || is.data.frame(mapping),
     all(
-      c("standort_str_name", "standort_str_nummer", "bfsnr_new") %in%
+      c("standort_str_name", "standort_str_nummer", "bfsnr") %in%
         DBI::dbListFields(con, "strom_produktionsanlagen")
     )
   )
