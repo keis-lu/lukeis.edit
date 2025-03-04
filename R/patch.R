@@ -24,7 +24,6 @@
 patch_pv_bfsnr_values <- function(con, bfsnr_to, mapping = NULL) {
   stopifnot(
     DBI::dbIsValid(con),
-    rlang::is_string(name),
     rlang::is_scalar_double(bfsnr_to),
     DBI::dbExistsTable(con, "strom_produktionsanlagen"),
     is.null(mapping) || is.data.frame(mapping),
