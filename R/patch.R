@@ -49,6 +49,15 @@ patch_pv_bfsnr_values <- function(con, bfsnr_to, mapping = NULL) {
     )
   }
 
+  if (!is.null(mapping)) {
+    stopifnot(
+      setequal(
+        c("standort_str_name", "standort_str_nummer", "bfsnr_new"),
+        colnames(mapping)
+      )
+    )
+  }
+
   build_query <- function(number, street, new_bfsnr) {
     if (is.na(number)) {
       q <- paste0(
